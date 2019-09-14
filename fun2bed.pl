@@ -6,7 +6,7 @@ use warnings;
 ###########################################################
 ## This program process the fuzznuc search result of PAM,
 ## generate the protospace positions and convert  to Bed 
-## file of targeting region (protospace).
+## file of targeting region (protospacer).
 ##
 ##   Kabin Xie, 2018.8
 ###########################################################
