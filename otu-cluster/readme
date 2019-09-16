@@ -1,0 +1,9 @@
+The 16S-seq results were processing using VSEARCH pipline and the results were summarized using R package.
+
+ vsearch.pipeline.bash  BASH script used in 16S-seq data processing
+ all.otutab100.txt   OTU table
+ all.otu100.mt2.txt  mitochondrial OTUs or its nuclear genome homologs
+ vsearch100.analysis.Git-hub.R    The R script i used in analysing the OTU table
+ root_soil_sample-seq.info.vsearch.csv sample-meta-data
+ vs.pipline.summary100.csv    summary of reads processing and OTU clustering
+ vsearch_sample_info.csv    information of pair-end sequencing files, used in BASH script
