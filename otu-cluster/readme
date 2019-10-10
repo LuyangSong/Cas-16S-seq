@@ -1,19 +1,26 @@
 The 16S-seq results were processing using VSEARCH pipline and the results were summarized using R package.
 
 Required files:
- Raw sequencing results (available on xx)
- sample information
- root_soil_sample-seq.info.vsearch.csv sample-meta-data
+ Raw sequencing results (available on https://bigd.big.ac.cn/gsa/s/project/PRJCA001629)
+ root_soil_sample-seq.info.vsearch.csv sample-meta-data (* Note)
  vsearch_sample_info.csv    information of pair-end sequencing files, used in BASH script
 
 1.Raw data processing and OTU clustering
    vsearch.pipeline.bash  BASH script used in 16S-seq data processing
  
-It generates OTU tables and OTUs represent rice Mt-16S-rRNA
+It generates OTU tables and OTUs represented rice Mt-16S-rRNA
    all.otutab100.txt   OTU table
    all.otu100.mt2.txt  mitochondrial OTUs or its nuclear genome homologs
+   vs.pipline.summary100.csv        summary of reads processing and OTU clustering
+
 
 2. R codes to summarizing the OTU table
-    vsearch100.analysis.Git-hub.R    The R script i used in analysing the OTU table
-    vs.pipline.summary100.csv        summary of reads processing and OTU clustering
+    vsearch100.analysis.Git-hub.R    The R script i used to analyze the OTU table and draw the plot for the manuscript.
+
  
+*Note.
+bS1_4, is the no-input control to monitor contamination of reagents
+bS1_1, bS1-2, bS1_3 are renames as Bs1048-4, Bs1048-5, Bs1048-6
+C_BS1_1, C_BS1_2, C_BS1_3 are also named as Bs1048-1, Bs1048-2, Bs1048-3
+
+
