@@ -1,4 +1,4 @@
-# Summarizing the OTU table
+# Summarizing the OTU result for Cas-16S-seq data
 # Kabin Xie
 # 2019.9.5
 
@@ -6,9 +6,9 @@ library(ggplot2)
 library(cowplot)
 library(gridExtra)
 
-# remove the # at the first header line
-# In this dataset, OTUs (clustered by 100%) aligned to  rice mito rDNA with 2 mismatches are in all.otu100.mt2.txt
-# Pay attention to col names if it start with digit.
+# remove the # label in the first header line in all.otutab100.txt
+# In this dataset, OTUs (clustered by 100%) matched  rice mito rDNA with 2 mismatches are in all.otu100.mt2.txt
+# Pay attention to Col names if it start with digit.
 
 ########################################################################################
 # A Input otu table and sample information
