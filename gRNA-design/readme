@@ -1,14 +1,14 @@
 Please see the step-by-step guide in the pdf file.
 
-I attached several data files in testing_data to test the codes of fun2bed.pl and sam_summary.pl 
+I attached several example data files (testing_data/) to test the codes of fun2bed.pl and sam_summary.pl 
 (1) 16S_NGG_10000.fuzznuc, 10000 lines extract from original fuzznuc program output
 (2) 16S_NGG_10000.bed, the output of fun2bed.pl
 (3) 16S_NGG_10000.tab, the output of bedtools
-(4) OsChl_microbe.vs.alnGG_10000.sam, 10000 lines extract from original SAM file from VSEARCH
+(4) OsChl_microbe.vs.alnGG_10000.sam, 10000 lines extract from original SAM file from VSEARCH result
 (5) OsChl.vs.alnGG.sam_10000.tab, output of sam_summary.pl
-(6) OsChl.vs.alnGG_ot_no.tab, output of sam_summary.pl, THIS IS THE DATA WE NEED TO RANK GRNA SPECIFICIEIES.
+(6) OsChl.vs.alnGG_ot_no.tab, output of sam_summary.pl, THIS IS THE DATA WE USED TO RANK GRNA SPECIFICIEIES.
 
-The command I used to test the Perl script.
+The command I used to test the Perl scripts.
 ./fun2bed.pl 16S_NGG_10000.fuzznuc 16S_NGG_10000.bed 1
 bedtools getfasta -fi ../../db/current.microbe.16S.fa  -bed testing_data/16S_NGG_10000.bed -fo 16S_NGG_10000.tab -tab
 ./sam_summary.pl 12 4 1 testing_data/OsChl_microbe.vs.alnGG_10000.sam OsChl.vs.alnGG.sam_10000.tab OsChl.vs.alnGG_ot_no.tab
