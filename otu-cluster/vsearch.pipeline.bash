@@ -151,7 +151,7 @@ $VSEARCH --threads $THREADS \
     --sizein \
     --sizeout \
     --fasta_width 0 \
-    --nonchimeras all.denovo.nonchimeras.fasta \
+    --nonchimeras all.denovo.nonchimeras.fasta
 
 echo Unique sequences after de novo chimera detection: $(grep -c "^>" all.denovo.nonchimeras.fasta)
 
